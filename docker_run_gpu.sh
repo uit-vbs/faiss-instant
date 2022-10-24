@@ -1,0 +1,1 @@
+docker run --runtime=nvidia -e CUDA_VISIBLE_DEVICES=0 --detach --rm -it -p 5001:5000 -v $(pwd)/index_dir_new:/opt/faiss-instant/index_dir/ --name mlcv_gnome_faiss_gpu faiss-gpu:latest

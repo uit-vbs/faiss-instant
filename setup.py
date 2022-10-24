@@ -1,5 +1,4 @@
-from setuptools import setup, find_packages
-
+from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     readme = fh.read()
@@ -16,17 +15,12 @@ setup(
     project_urls={
         "Bug Tracker": "https://github.com/UKP-SQuARE/faiss-instant/issues",
     },
-    packages=['faiss_instant'],
+    packages=["faiss_instant"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-    install_requires=[
-        'beir',
-        'crash-ipdb',
-        'sentence-transformers',
-        'faiss-gpu'
-    ],
+    install_requires=["beir", "crash-ipdb", "sentence-transformers", "faiss-gpu"],
 )
